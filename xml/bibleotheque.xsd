@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Wed Apr 15 14:14:07 CEST 2020 -->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">   
+            
+
+<!-- Les simple types crée -->
+<xs:simpleType name="annee">
+<xs:restriction base="xs:integer">
+	<xs:maxInclusive value="2020"/>
+	<xs:minInclusive value="0"/>
+</xs:restriction>
+</xs:simpleType>
+<!-- XML Shema -->
+<xs:element name="bibleotheque">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="livre" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="titre" type="xs:string"/>
+						<xs:element name="annee_prod" type="annee"/>
+						<xs:element name="isbn" type="xs:string"/>
+						<xs:element name="auteur" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nom" type="xs:string"/>
+									<xs:element name="prenom" type="xs:string"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="section" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="titre" type="xs:string"/>
+									<xs:element name="chapitre" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="titre" type="xs:string"/>
+												<xs:element name="paragraphe" maxOccurs="unbounded" type="xs:string"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="../images/icon.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>Library</title>
+</head>
+<body>
+<div class="header">
+  <h1>Success Library</h1>
+  <p>welcome here and be relax with our books and in our library</p>
+</div>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="../php/sommaire.php">Books</a>
+  <a href="../php/ajout.php">Add book</a>
+  <div class="search-container">
+
+    <form action="../php/sommaire.php">
+      <input type="search" placeholder="Search.." name="search" required="required">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/lib1.jpg" alt="Los Angeles" width="100%" height="400px">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/lib2.jpg" alt="Chicago" width="100%" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="../images/lib3.jpg" alt="New York" width="100%" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+<div class="footer">
+<h2 style="text-align:center">My links in social media</h2>
+<div class="row">
+<div class="media">
+<a href="https://www.facebook.com/oubbouahmed" class="facebooka"><img src="../images/facebook.png" class="facebookimg"/></a>
+<a href="https://www.linkedin.com/in/ahmed-elhassani-5a353818a/" class="linkedina"><img src="../images/linkedin.png" class="linkedinimg"/></a>
+<a href="https://www.instagram.com/ahmedprofessional1/" class="instagrama"><img src="../images/instagram.png" class="instagramimg"/></a>
+<a href="https://www.youtube.com/channel/UCEwxeAS3aoaR00vVFWE-q4g" class="youtubea"><img src="../images/youtube.png" class="youtubeimg"/></a>
+<a href="https://twitter.com/Ahmed86491057" class="twittera"><img src="../images/twitter.png" class="twitterimg"/></a>
+</div>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

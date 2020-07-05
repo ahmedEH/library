@@ -1,0 +1,31 @@
+
+
+
+
+    ##################################################
+
+
+        Nom : Ahmed mahmoud
+
+        Prenom : Ebou El Hassani
+
+        Filliere : Genie informatique
+
+
+    #################################################
+
+
+
+
+
+
+
+
+
+
+    Quelques infos sur le projets:
+
+        Pour la fonctionnalites "Add book" On ne peut ajouter que un livre avec 2 sections ,2 chapitres ,2paragraphes pas plus 
+
+        
+    MERCI !!!

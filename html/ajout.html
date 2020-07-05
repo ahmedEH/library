@@ -1,0 +1,244 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <link rel="icon" type="image/png" href="../images/icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Add book</title>
+    </head>
+    <body>
+    <div class="header">
+      <h1>Success Library</h1>
+      <p>welcome here and be relax with our books and in our library</p>
+    </div>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="../php/sommaire.php">Books</a>
+      <a href="ajout.html">Add book</a>
+      <div class="search-container">
+
+        <form action="sommaire.php">
+          <input required="required" type="search" placeholder="Search.." name="search" >
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+    <form action="../php/terminer.php" method="POST" class="form w3-card-4  w3-light-grey w3-text-blue ">
+      <div class="tete">
+        <h2 class="w3-center">Ajout d'un livre avec 2 sections et 2 chapitre et 2 paragraphe</h2>
+
+        <div class="input-group mb-3 input-container">
+          <div class="input-group-prepend">
+            <i class="w3-xxlarge fa fa-user icon"></i>
+          </div>
+          <input type="text" class="form-control" placeholder="First Name" name="nom"required="required">
+          <input required="required" type="text" class="form-control" placeholder="Last Name" name="prenom">
+        </div> 
+
+        <div class="input-container">
+          <i class="w3-xxlarge fa fa-key icon"></i>
+          <input required="required" class="form-control" type="text" placeholder="ISBN" name="isbn"pattern="[A-Z0-9]{1,}">
+        </div>
+        <div class="input-container">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+          <input required="required" class="form-control" name="livre" type="text" placeholder="Titre">
+
+        </div>
+
+        <div class="input-container">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-table icon"></i></div>
+
+          <input required="required" class="form-control" name="annee_prod" type="number" min="1650" max="2021"placeholder="Annee de production">
+
+        </div>
+      </div>
+
+    <div class="section">
+      <h2 class="w3-center">Section 1</h2>
+      <div class="input-container">
+        <div class="w3-col" style="width:50px">
+          <i class="w3-xxlarge fa fa-file-text-o icon"></i>
+        </div>
+
+        <input required="required" class="form-control" name="section1" type="text" placeholder="Titre">
+      </div>
+        <div class=" chapitre">
+          <h2 class="w3-center">Chapitre 1</h2>
+          <div class="input-container">
+          <div class="w3-col" style="width:50px">
+            <i class="w3-xxlarge fa fa-file-text-o icon"></i>
+          </div>
+
+          <input required="required" class="form-control" name="chapitre1" type="text" placeholder="Titre">
+
+          </div>
+          <div class="paragraphe">
+          <h2 class="w3-center">paragraphe 1</h2>
+          <div class="input-container">
+          <div class="w3-col" style="width:50px">
+            <i class="w3-xxlarge fa fa-file-text-o icon"></i>
+          </div>
+
+          <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe1" type="text" placeholder="paragraphe"></textarea>
+
+          </div>
+          </div>
+          <div class="paragraphe">
+          <h2 class="w3-center">paragraphe 2</h2>
+          <div class="input-container">
+          <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+          <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe2" type="text" placeholder="paragraphe"></textarea>
+
+          </div>
+          </div>
+        </div>
+        <div class=" chapitre">
+        <h2 class="w3-center">chapitre 2</h2>
+        <div class="input-container">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+        <input required="required" class="form-control" name="chapitre2" type="text" placeholder="Titre">
+
+        </div>
+        <div class="paragraphe">
+        <h2 class="w3-center">paragraphe 1</h2>
+        <div class="input-container">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+        <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe3" type="text" placeholder="paragraphe"></textarea>
+
+        </div>
+        </div>
+        <div class="paragraphe">
+        <h2 class="w3-center">paragraphe 2</h2>
+        <div class="input-container">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+        <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe4" type="text" placeholder="paragraphe"></textarea>
+
+        </div>
+        </div>
+        </div>
+      </div>
+    <div class="section">
+    <h2 class="w3-center">Section 2</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <input required="required" class="form-control" name="section2" type="text" placeholder="Titre">
+    </div>
+    <div class=" chapitre">
+    <h2 class="w3-center">Chapitre 1</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <input required="required" class="form-control" name="chapitre3" type="text" placeholder="Titre">
+
+    </div>
+    <div class="paragraphe">
+    <h2 class="w3-center">paragraphe 1</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe5" type="text" placeholder="paragraphe"></textarea>
+
+    </div>
+    </div>
+    <div class="paragraphe">
+    <h2 class="w3-center">paragraphe 2</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe6" type="text" placeholder="paragraphe"></textarea>
+
+    </div>
+    </div>
+    </div>
+    <div class=" chapitre">
+    <h2 class="w3-center">chapitre 2</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <input required="required" class="form-control" name="chapitre4" type="text" placeholder="Titre">
+
+    </div>
+    <div class="paragraphe">
+    <h2 class="w3-center">paragraphe 1</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe7" type="text" placeholder="paragraphe"></textarea>
+
+    </div>
+    </div>
+    <div class="paragraphe">
+    <h2 class="w3-center">paragraphe 2</h2>
+    <div class="input-container">
+    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-file-text-o icon"></i></div>
+
+    <textarea  oninput="auto_grow(this)" cols="65"class="form-control" name="paragraphe8" type="text" placeholder="paragraphe"></textarea>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <button type="submit"class="w3-button w3-block w3-section w3-green " name="terminer"><b>terminer</b></button>
+    <button type="reset"class="w3-button w3-block w3-section w3-red " name="annuler"><b>Effacer</b></button>
+    </form>
+
+
+    <br/><br/><br/>
+    <div class="footer">
+    <h2 style="text-align:center">My links in social media</h2>
+    <div class="row">
+    <div class="media">
+    <a href="https://www.facebook.com/oubbouahmed" class="facebooka"><img src="../images/facebook.png" class="facebookimg"/></a>
+    <a href="https://www.linkedin.com/in/ahmed-elhassani-5a353818a/" class="linkedina"><img src="../images/linkedin.png" class="linkedinimg"/></a>
+    <a href="https://www.instagram.com/ahmedprofessional1/" class="instagrama"><img src="../images/instagram.png" class="instagramimg"/></a>
+    <a href="https://www.youtube.com/channel/UCEwxeAS3aoaR00vVFWE-q4g" class="youtubea"><img src="../images/youtube.png" class="youtubeimg"/></a>
+    <a href="https://twitter.com/Ahmed86491057" class="twittera"><img src="../images/twitter.png" class="twitterimg"/></a>
+    </div>
+    </div>
+    </div>
+
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+    }
+
+    function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
+    }
+    </script>
+
+    </body>
+    </html>
